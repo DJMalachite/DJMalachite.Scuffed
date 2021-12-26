@@ -1,7 +1,7 @@
 {
 	"Name" : "Northstar.Custom.DJMalachite",
-	"Description": "(ideally) Polished custom content for Northstar",
-	"Version": "1.0.0",
+	"Description": "Stupidly scuffed weapons console commands follow give [mp_weapon_sniper2] [mp_titanweapon_meteor_scuffed scuffed] [mp_titanweapon_40mm_scuffed devotion] ",
+	"Version": "1.0.1",
 	"LoadPriority": 1,
 	"RequiredOnClient": true,
 	
