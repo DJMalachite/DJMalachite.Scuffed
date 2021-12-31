@@ -4,11 +4,9 @@ global function NorthstarCustomPrecacheDJMalachite
 void function NorthstarCustomPrecacheDJMalachite()
 {
 	
-        PrecacheWeapon( "mp_titanweapon_meteor_scuffed" )
-        PrecacheWeapon( "mp_weapon_sniper2" )
-        PrecacheWeapon( "mp_titanweapon_40mm_scuffed" )
+        PrecacheWeapon( "djmalachite_scuffed_kraber" )
+        PrecacheWeapon( "djmalachite_scuffed_mastiff" )
+        PrecacheWeapon( "djmalachite_scuffed_scorch_thermite" )
+		PrecacheWeapon( "djmalachite_scuffed_tone_40mm" )
 	
-	// create kunai damage source so game won't crash when we hit smth with it
-	// just using the default melee one, easier than making a new one
-	getconsttable()[ "eDamageSourceId" ][ "melee_pilot_kunai" ] <- eDamageSourceId.melee_pilot_emptyhanded
 }
