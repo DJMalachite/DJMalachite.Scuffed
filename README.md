@@ -20,7 +20,6 @@ DJMalachite's Stupidly scuffed weapons mod for Titanfall 2 + Northstar Client
   You should see a folder named Northstar.Custom.DJMalachite 
   Copy that folder to Titanfall2\R2Northstar\mods
   Launch and enjoy
-  cd my-project
 ```
     
 ## Console commands
