@@ -33,7 +33,7 @@ WeaponData
 	// Models
 	"viewmodel"   									"models/weapons/lmg_hemlok/ptpov_lmg_hemlok.mdl"
 	"playermodel" 									"models/weapons/lmg_hemlok/w_lmg_hemlok.mdl"
-	"projectilemodel" 								"models/weapons/kunai/ptpov_kunai.mdl"
+	"projectilemodel" 								"models/titans/medium/titan_medium_vanguard.mdl"
 
 	// Effects
 	"tracer_effect"   								"weapon_tracers_xo16"
@@ -205,8 +205,8 @@ WeaponData
 	"grenade_bounce_vel_frac_along_normal"			"0.5"
 	"grenade_bounce_randomness"						"0.2"
 	"grenade_bounce_extra_vertical_randomness"		"0.2"
-	"grenade_roll_vel_frac_per_second"				"0.1"
-	"projectile_launch_speed"						"2500"
+	"grenade_roll_vel_frac_per_second"				"0.00001"
+	"projectile_launch_speed"						"1500"
 	"projectile_first_person_offset_fraction"		"2"
 
 	"projectile_inherit_owner_velocity_scale"		"1"

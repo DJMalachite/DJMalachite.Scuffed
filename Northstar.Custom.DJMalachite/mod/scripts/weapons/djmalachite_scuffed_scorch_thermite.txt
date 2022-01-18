@@ -13,7 +13,7 @@ WeaponData
 	"hud_icon"										"r2_ui/menus/loadout_icons/titan_weapon/titan_weapon_thermite_cannon"
 
 	"weaponClass" 									"titan"
-	"fire_mode"   									"semi-auto"
+	"fire_mode"   									"auto"
 	"pickup_hold_prompt"  							"Hold [USE] [WEAPONNAME]"
 	"pickup_press_prompt" 							"[USE] [WEAPONNAME]"
 	"minimap_reveal_distance"						"32000"
@@ -146,15 +146,15 @@ WeaponData
 
 	// Ammo
 	"ammo_stockpile_max"							"1500"
-	"ammo_clip_size"   								"1"
+	"ammo_clip_size"   								"40"
 	"ammo_default_total"							"1500"
 
 	// Behavior
-	"fire_rate"   									"1.7"
+	"fire_rate"   									"35"
 	"zoom_time_in"									"0.1"
 	"zoom_time_out"   								"0.1"
 	"zoom_fov"										"50"
-	"reload_time"									"2.4"
+	"reload_time"									"6"
 	"reload_time_late1"								"1.7"
 	"reloadempty_time"								"2.4"
 	"reloadempty_time_late1"						"1.7"
@@ -452,13 +452,13 @@ WeaponData
 		{
 
 		}
-		scuffed
-		{
-                 "ammo_clip_size"   								"1280"
-	         "fire_rate"   									"40"
-	         "fire_mode"                                                                     "auto"
-				  
-		}
+		//scuffed
+		//{
+        //         "ammo_clip_size"   								"1280"
+	    //     "fire_rate"   									"40"
+	    //     "fire_mode"                                                                     "auto"
+		//		  
+		//}
 		scuffed_devotion
 		{
                  "ammo_clip_size"   								"1280"

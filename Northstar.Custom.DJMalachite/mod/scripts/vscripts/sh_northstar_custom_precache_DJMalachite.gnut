@@ -4,13 +4,18 @@ global function NorthstarCustomPrecacheDJMalachite
 void function NorthstarCustomPrecacheDJMalachite()
 {
 	
-        PrecacheWeapon( "djmalachite_scuffed_kraber" )
-        PrecacheWeapon( "djmalachite_scuffed_mastiff" )
-        PrecacheWeapon( "djmalachite_scuffed_scorch_thermite" )
+                PrecacheWeapon( "djmalachite_scuffed_kraber" )
+                PrecacheWeapon( "djmalachite_scuffed_mastiff" )
+                PrecacheWeapon( "djmalachite_scuffed_scorch_thermite" )
 		PrecacheWeapon( "djmalachite_scuffed_tone_40mm" )
 		PrecacheWeapon( "djmalachite_scuffed_softball" )
 		PrecacheWeapon( "djmalachite_scuffed_salvo_core" )
                 PrecacheWeapon( "djmalachite_scuffed_r97" )
+                PrecacheWeapon( "djmalachite_scuffed_softball_BT7274_launcher" )
+                PrecacheWeapon( "djmalachite_scuffed_evotion" )
+                PrecacheWeapon( "djmalachite_scuffed_hemlock" )
+                PrecacheWeapon( "djmalachite_scuffed_smr" )
+                PrecacheWeapon( "djmalachite_scuffed_mozam" )
     
 		
 	

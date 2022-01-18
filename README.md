@@ -6,7 +6,7 @@ DJMalachite's Stupidly scuffed weapons mod for Titanfall 2 + Northstar Client
 
 ## Features
 
-- Adds 7 custom modded guns
+- Adds 12 custom modded guns
 
 
 ## Installation
@@ -15,7 +15,7 @@ DJMalachite's Stupidly scuffed weapons mod for Titanfall 2 + Northstar Client
 
 ```bash
   Click green code button and download ZIP
-  Extract Northstar.Custom.DJMalachite-main.zip
+  Extract DJMalachites-Scuffed-Weapons-Mod-main.zip
   Inside you will find a folder that has README.md
   You should see a folder named Northstar.Custom.DJMalachite 
   Copy that folder to Titanfall2\R2Northstar\mods
@@ -33,6 +33,11 @@ give djmalachite_scuffed_softball
 give djmalachite_scuffed_salvo_core
 give djmalachite_scuffed_r97
 give djmalachite_scuffed_r97 Smart_core
+give djmalachite_scuffed_softball_BT7274_launcher
+give djmalachite_scuffed_evotion
+give djmalachite_scuffed_hemlock
+give djmalachite_scuffed_smr
+give djmalachite_scuffed_mozam
 ```
 ## Requirments
 

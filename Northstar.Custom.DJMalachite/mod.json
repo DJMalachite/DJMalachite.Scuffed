@@ -1,7 +1,7 @@
 {
 	"Name" : "Northstar.Custom.DJMalachite",
 	"Description": "Stupidly scuffed weapons console commands follow {give djmalachite_scuffed_WEAPONNAME}  ",
-	"Version": "1.3.0",
+	"Version": "1.5.0",
 	"LoadPriority": 1,
 	"RequiredOnClient": true,
 	
