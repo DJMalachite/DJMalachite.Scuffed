@@ -30,6 +30,7 @@ WeaponData
 	"projectile_straight_time_max"					"2"
 	"projectile_straight_radius_min"				"2"
 	"projectile_straight_radius_max"				"4"
+    "projectile_launch_speed"						"3300"
 
 
 	// Menu

@@ -1,0 +1,47 @@
+{
+    "Name" : "DJMalachite.scuffed",
+    "Description": "Stupidly scuffed weapons console commands follow {give djmalachite_scuffed_WEAPONNAME}  ",
+    "Version": "1.5.0",
+    "LoadPriority": 1,
+    "RequiredOnClient": true,
+    
+    "ConVars": [
+        {
+            "Name": "ns_disallowed_weapons",
+            "DefaultValue": ""
+        },
+        {
+            "Name": "ns_disallowed_weapon_primary_replacement",
+            "DefaultValue": "mp_weapon_rspn101"
+        }
+    ],
+    
+    "Scripts": [
+        {
+            "Path": "sh_northstar_custom_precache_DJMalachite.gnut",
+            "RunOn": "( CLIENT || SERVER ) && MP",
+            "ClientCallback": {
+                "After": "NorthstarCustomPrecacheDJMalachite"
+            },
+            
+            "ServerCallback": {
+                "After": "NorthstarCustomPrecacheDJMalachite"
+            }
+        },
+        {
+            "Path": "sh_weapon_rotation.gnut",
+            "RunOn": "MP",
+            "ClientCallback": {
+             "After": "Scuffed_Init"
+            },            
+
+            "ServerCallback": {
+                "After": "Scuffed_Init"
+            }
+        }
+    ],
+    
+    "Localisation": [
+        "resource/scuffed_custom_english.txt"
+    ]
+}
