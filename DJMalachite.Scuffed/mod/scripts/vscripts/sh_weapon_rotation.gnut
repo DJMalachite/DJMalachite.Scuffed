@@ -30,7 +30,7 @@ void function Scuffed_Init() {
     //These lists are only really needed if your mod uses them, they are not otherwise a needed part of the script 
 
 // Enabled Functions
-    bool function ExampleEnabled() {
+    bool function ScuffedEnabled() {
         return GetCurrentPlaylistVarInt("rotate_abilities", 0) == 1
     }
     //squirrel as a language does not considder 0 and 1 to be the same as false and true, instead we use this function to check.
@@ -40,7 +40,7 @@ void function Scuffed_Init() {
         //the argument at the top, "entity player" is given by the callback and refers to the player that just respawned
         //different callbacks will provide different information, so it can be useful to check what you have access to
 
-                  if(ExampleEnabled()){
+                  if(ScuffedEnabled()){
             //this refers to the earlier function to check if its enabled
             foreach ( entity weapon in player.GetMainWeapons() )
                 player.TakeWeaponNow( weapon.GetWeaponClassName() )
