@@ -14,16 +14,16 @@ void function Scuffed_Init() {
 }
     array<string> pilotGuns = [
         "djmalachite_scuffed_evotion",
-		"djmalachite_scuffed_hemlock",
-		"djmalachite_scuffed_kraber",
-		"djmalachite_scuffed_mastiff",
-		"djmalachite_scuffed_mozam",
-		"djmalachite_scuffed_r97",
-		"djmalachite_scuffed_scorch_thermite",
-		"djmalachite_scuffed_smr",
-		"djmalachite_scuffed_softball",
-		"djmalachite_scuffed_softball_BT7274_launcher",
-		"djmalachite_scuffed_tone_40mm"
+        "djmalachite_scuffed_hemlock",
+        "djmalachite_scuffed_kraber",
+        "djmalachite_scuffed_mastiff",
+        "djmalachite_scuffed_mozam",
+        "djmalachite_scuffed_r97",
+        "djmalachite_scuffed_scorch_thermite",
+        "djmalachite_scuffed_smr",
+        "djmalachite_scuffed_softball",
+        "djmalachite_scuffed_softball_BT7274_launcher",
+        "djmalachite_scuffed_tone_40mm"
     ]
     //This is a list of weapons you want to allow, remember to seperate them with a ,
     
@@ -31,7 +31,7 @@ void function Scuffed_Init() {
 
 // Enabled Functions
     bool function ScuffedEnabled() {
-        return GetCurrentPlaylistVarInt("rotate_abilities", 0) == 1
+        return GetCurrentPlaylistVarInt("SCUFFED", 0) == 1
     }
     //squirrel as a language does not considder 0 and 1 to be the same as false and true, instead we use this function to check.
 #if SERVER
@@ -40,25 +40,28 @@ void function Scuffed_Init() {
         //the argument at the top, "entity player" is given by the callback and refers to the player that just respawned
         //different callbacks will provide different information, so it can be useful to check what you have access to
 
-                  if(ScuffedEnabled()){
+            if(ScuffedEnabled()){
             //this refers to the earlier function to check if its enabled
             foreach ( entity weapon in player.GetMainWeapons() )
+            {
                 player.TakeWeaponNow( weapon.GetWeaponClassName() )
-            weapon = pilotGuns[RandomInt(PilotGuns.len()-1)
-            if (weapon != "djmalachite_scuffed_r97"){
-                if weapon != "djmalchite_scuffed_tone_40mm"
+            }
+            string weapon = pilotGuns[RandomInt(pilotGuns.len()-1)]
+            if(weapon != "djmalachite_scuffed_r97"){
+                if(weapon != "djmalachite_scuffed_tone_40mm"){
                     player.GiveWeapon(weapon)
+                }
             }
-            if (weapon == "djmalchite_scuffed_r97"{
-                    player.GiveWeapon(weapon, "Smart_core"))
+            if(weapon == "djmalachite_scuffed_r97"){
+                    player.GiveWeapon(weapon, ["Smart_core"])
             }
-            if (weapon == "djmalchite_scuffed_tone_40mm"){
-                    player.GiveWeapon(weapon, "devotion")
+            if(weapon == "djmalachite_scuffed_tone_40mm"){
+                    player.GiveWeapon(weapon, ["devotion"])
             }
             //this line picks a random number between 0 and the length of the list -1, then gives the weapon with that index
             //to the player, the -1 is needed as in a list of length 5 the index 5 is actually outside the index due to indexes
             //starting from 0
             }
         }
-    }
+
 #endif
