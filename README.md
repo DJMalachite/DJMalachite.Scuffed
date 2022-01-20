@@ -21,7 +21,7 @@ In private match settings under #MODE_SETTING_CATEGORY_SCUFFED enable scuffed we
 ```bash
   Click green release button and download ZIP
   Extract DJMalachite.Scuffed.zip
-  Copy that extracted folder to Titanfall2\R2Northstar\mods
+  inside the extracted folder you will see DJMalachite.Scuffed copy that to Titanfall2\R2Northstar\mods
   Launch and enjoy
 ```
     
