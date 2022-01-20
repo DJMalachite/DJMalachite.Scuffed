@@ -8,17 +8,20 @@ DJMalachite's Stupidly scuffed weapons mod for Titanfall 2 + Northstar Client
 
 - Adds 12 custom modded guns
 
+## Custom gamemode (Scuffed) {WIP}
+
+Rotates pilot scuffed guns on spawn
+In private match settings under #MODE_SETTING_CATEGORY_SCUFFED enable scuffed weapon rotation
+
 
 ## Installation
 
 
 
 ```bash
-  Click green code button and download ZIP
-  Extract DJMalachites-Scuffed-Weapons-Mod-main.zip
-  Inside you will find a folder that has README.md
-  You should see a folder named Northstar.Custom.DJMalachite 
-  Copy that folder to Titanfall2\R2Northstar\mods
+  Click green release button and download ZIP
+  Extract DJMalachite.Scuffed.zip
+  Copy that extracted folder to Titanfall2\R2Northstar\mods
   Launch and enjoy
 ```
     
