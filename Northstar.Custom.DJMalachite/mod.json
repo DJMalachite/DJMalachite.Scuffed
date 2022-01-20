@@ -28,9 +28,17 @@
 				"After": "NorthstarCustomPrecacheDJMalachite"
 			}
 		}
+		{
+			"Path": "sh_weapon_rotation.gnut",
+			"RunOn": "( SERVER ) && MP",
+			
+			"ServerCallback": {
+				"After": "Scuffed_Init"
+			}
+		}
 	],
 	
 	"Localisation": [
-		"resource/northstar_custom_%language%.txt"
+		"resource/scuffed_custom_english.txt"
 	]
 }
