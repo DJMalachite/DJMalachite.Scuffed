@@ -47,8 +47,8 @@ WeaponData
 		"npc_explosion_damage"						"<KEEP_DEFAULT>"
 		"explosion_damage"							"75"
 		"explosion_damage_heavy_armor"				"200"
-		"explosion_inner_radius"  					"17"
-		"explosionradius" 							"150"
+		"explosion_inner_radius"  						"100"
+		"explosionradius" 								"225"
 
 		"deploy_time" 								"0.85"
 

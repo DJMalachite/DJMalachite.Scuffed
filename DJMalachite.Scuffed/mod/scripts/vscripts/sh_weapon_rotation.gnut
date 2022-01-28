@@ -23,7 +23,8 @@ void function Scuffed_Init() {
         "djmalachite_scuffed_smr",
         "djmalachite_scuffed_softball",
         "djmalachite_scuffed_softball_BT7274_launcher",
-        "djmalachite_scuffed_tone_40mm"
+        "djmalachite_scuffed_tone_40mm",
+		"djmalachite_scuffed_wingman_elite"
     ]
     //This is a list of weapons you want to allow, remember to seperate them with a ,
     

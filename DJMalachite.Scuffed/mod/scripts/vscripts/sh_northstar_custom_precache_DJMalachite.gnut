@@ -16,6 +16,9 @@ void function NorthstarCustomPrecacheDJMalachite()
                 PrecacheWeapon( "djmalachite_scuffed_hemlock" )
                 PrecacheWeapon( "djmalachite_scuffed_smr" )
                 PrecacheWeapon( "djmalachite_scuffed_mozam" )
+                PrecacheWeapon( "djmalachite_scuffed_wingman_elite")
+
+
     
 		
 	

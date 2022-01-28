@@ -1,7 +1,7 @@
 {
-    "Name" : "DJMalachite.scuffed",
+    "Name" : "DJMalachite.scuffed.Dev",
     "Description": "Stupidly scuffed weapons console commands follow {give djmalachite_scuffed_WEAPONNAME}  ",
-    "Version": "1.5.1",
+    "Version": "1.5.2",
     "LoadPriority": 1,
     "RequiredOnClient": true,
     
