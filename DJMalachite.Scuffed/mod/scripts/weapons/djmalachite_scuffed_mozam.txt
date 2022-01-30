@@ -90,9 +90,9 @@ WeaponData
 
 	MP_BASE
 	{
-		"ammo_default_total"							"60"
-		"ammo_stockpile_max"							"60"
-		"ammo_no_remove_from_stockpile"					"1"
+		"ammo_default_total"							"6000"
+		"ammo_stockpile_max"							"6000"
+		"ammo_no_remove_from_stockpile"					"0"
 		"ammo_min_to_fire"								"1"
 
 		"aimassist_adspull_weaponclass"					"broad"
