@@ -6,7 +6,8 @@ void function Scuffed_Init() {
 
     #if SERVER //this states that the lines from here to the #endif will only execute on the serverside
 
-        AddCallback_OnPlayerRespawned(Respawn)//callbacks are essentially bits of code that trigger when things happen, respawn luckily added alot of these.
+        AddCallback_OnPlayerRespawned(Respawn)
+		AddCallback_PlayerClassChanged(Titan)//callbacks are essentially bits of code that trigger when things happen, respawn luckily added alot of these.
         //this callback occurs every time a player respawns and triggers the "respawn" function defined later. as a note many callbacks will also pass arguments.
         //in this case it will pass the entity that respawned (in this case the player)
 
@@ -23,7 +24,13 @@ void function Scuffed_Init() {
         "djmalachite_scuffed_smr",
         "djmalachite_scuffed_softball",
         "djmalachite_scuffed_softball_BT7274_launcher",
-        "djmalachite_scuffed_tone_40mm"
+        "djmalachite_scuffed_tone_40mm",
+		"djmalachite_scuffed_wingman_elite",
+		"djmalachite_scuffed_softball_arc",
+    ]
+	array<string> titanGuns = [
+        "djmalachite_scuffed_scorch_thermite",
+        "djmalachite_scuffed_tone_40mm",
     ]
     //This is a list of weapons you want to allow, remember to seperate them with a ,
     
@@ -63,5 +70,30 @@ void function Scuffed_Init() {
             //starting from 0
             }
         }
+        
+	void function Titan(entity player){
+        //the argument at the top, "entity player" is given by the callback and refers to the player that just respawned
+        //different callbacks will provide different information, so it can be useful to check what you have access to
+
+            if(ScuffedEnabled()){
+            //this refers to the earlier function to check if its enabled
+            foreach ( entity weapon in player.GetMainWeapons() )
+            {
+                player.TakeWeaponNow( weapon.GetWeaponClassName() )
+            }
+            string weapon = titanGuns[RandomInt(titanGuns.len())]
+                if(weapon != "djmalachite_scuffed_tone_40mm"){
+                    player.GiveWeapon(weapon)
+                }
+                if(weapon == "djmalachite_scuffed_tone_40mm"){
+                    player.GiveWeapon(weapon, ["devotion"])
+            }
+            }
+
+
+            //this line picks a random number between 0 and the length of the list -1, then gives the weapon with that index
+            //to the player, the -1 is needed as in a list of length 5 the index 5 is actually outside the index due to indexes
+            //starting from 0
+            }
 
 #endif

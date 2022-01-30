@@ -6,7 +6,7 @@ DJMalachite's Stupidly scuffed weapons mod for Titanfall 2 + Northstar Client
 
 ## Features
 
-- Adds 12 custom modded guns
+- Adds 14 custom modded guns
 
 ## Custom gamemode (Scuffed) {WIP}
 
@@ -41,6 +41,8 @@ give djmalachite_scuffed_evotion
 give djmalachite_scuffed_hemlock
 give djmalachite_scuffed_smr
 give djmalachite_scuffed_mozam
+give djmalachite_scuffed_wingman_elite
+give djmalachite_scuffed_softball_arc
 ```
 ## Requirments
 

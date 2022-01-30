@@ -44,7 +44,7 @@ WeaponData
 	// Models
 	"viewmodel"   									"models/weapons/auto_rocket_launcher_ARL/ptpov_ARL.mdl"
 	"playermodel" 									"models/weapons/auto_rocket_launcher_ARL/w_ARL.mdl"
-	"projectilemodel" 								"models/weapons/bullets/projectile_arl.mdl"
+	"projectilemodel" 								"models/weapons/auto_rocket_launcher_ARL/ptpov_ARL.mdl"
 	"vortex_absorb_sound"							"Vortex_Shield_AbsorbRocket"
 	"vortex_absorb_sound_1p_vs_3p"					"Vortex_Shield_AbsorbRocket_1P_VS_3P"
 
